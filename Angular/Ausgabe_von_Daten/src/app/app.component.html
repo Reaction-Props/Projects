@@ -1,0 +1,47 @@
+
+<h1>Das ist ein Test: {{title}}</h1>
+
+<h2>Sein Name ist: {{user.name}}. Sein Alter ist: {{user.age}}</h2>
+<hr>
+<a href="#" title="user">{{tooltip}}</a>
+<hr>
+<div>
+  <a href="#" [title]="tooltip">Link</a>
+</div>
+<hr>
+<div>
+  <a href="#" bind-title="tooltip">Link</a>
+</div>
+
+<!-- Styles -->
+<hr>
+<h3 class="red">Rot</h3>
+<h3 style="color: red; background: aqua; cursor: pointer; font-size: 40px">Rot</h3>
+
+-----------------------------------------------------------------------------------------
+
+<h3 [class]="cssClass">Rot</h3>
+<h3 [style]="inlineStyles">Rot</h3>
+
+
+<p [style.width]="'50%'">Lorem ipsum dolor sit amet,
+  consectetur adipisicing elit. Aut dolorem et quas rerum voluptatibus.
+  At blanditiis distinctio ducimus eaque enim fuga, magni maxime quas.
+  Assumenda beatae quaerat quas reiciendis voluptatibus.
+</p>
+
+
+<p [style.width]="withtext">Lorem ipsum dolor sit amet,
+  consectetur adipisicing elit. Aut dolorem et quas rerum voluptatibus.
+  At blanditiis distinctio ducimus eaque enim fuga, magni maxime quas.
+  Assumenda beatae quaerat quas reiciendis voluptatibus.
+</p>
+
+
+
+
+
+
+
+
+<router-outlet></router-outlet>
