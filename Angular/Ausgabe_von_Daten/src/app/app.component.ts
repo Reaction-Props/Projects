@@ -25,6 +25,20 @@ export class AppComponent {
   withtext = 50;
 
   somedate = new  Date();
+
+
+  ageOfUsers = [
+    {age: 50}, {age: 85}, {age: 30},
+  ]
+
+  constructor() {
+    setTimeout(() => {
+      // this.ageOfUsers.push({age: 16})
+      this.ageOfUsers = [...this.ageOfUsers, {age: 99}]
+    }, 4000)
+  }
+
+
 }
 
 
