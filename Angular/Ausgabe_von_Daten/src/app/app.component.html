@@ -14,6 +14,13 @@
 <p>{{somedate | date: 'long'}}</p>
 <p>{{somedate | date: 'long' | slice: 0: 9}}</p>
 <p>{{somedate | date: 'medium'}}</p>
+------------------------------------------------------------------------------------------------
+//Eigene Pips
+<p>{{"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+  sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+  ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+  aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
+  est Lorem ipsum dolor sit amet. " | cutText}}</p>
 
 
 
@@ -60,12 +67,5 @@
   At blanditiis distinctio ducimus eaque enim fuga, magni maxime quas.
   Assumenda beatae quaerat quas reiciendis voluptatibus.
 </p>
-
-
-
-
-
-
-
-
+--------------------------------------------------------------------------------------------------
 <router-outlet></router-outlet>
