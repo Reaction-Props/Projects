@@ -23,6 +23,8 @@ export class AppComponent {
   cssClass = 'blue'
 
   withtext = 50;
+
+  somedate = new  Date();
 }
 
 

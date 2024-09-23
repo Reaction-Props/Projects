@@ -1,4 +1,28 @@
+<h1>{{title | lowercase}}</h1>
+<h1>{{title | uppercase}}</h1>
 
+
+<h1>{{ "Lorem ipsum dolor sit amet, consectetur adipisicing elit." | titlecase }}</h1>
+
+<p>{{user | json}}</p>
+
+<h1>{{ "Lorem ipsum dolor sit amet, consectetur adipisicing elit." | slice: 2 }}</h1>
+<h1>{{ "Lorem ipsum dolor sit amet, consectetur adipisicing elit." | slice: 2: 6 }}</h1>
+
+<p>{{somedate}}</p>
+<p>{{somedate | date: 'short'}}</p>
+<p>{{somedate | date: 'long'}}</p>
+<p>{{somedate | date: 'long' | slice: 0: 9}}</p>
+<p>{{somedate | date: 'medium'}}</p>
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------
 <h1>Das ist ein Test: {{title}}</h1>
 
 <h2>Sein Name ist: {{user.name}}. Sein Alter ist: {{user.age}}</h2>
