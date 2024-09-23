@@ -1,5 +1,7 @@
 import {multiply} from "./multiply";
 
-test('should multiply ', () => {
-    const res = multiply(1, 2)
+it('should multiply ', () => {
+    const res = multiply(1, 3)
+
+    expect(res).toBe(3)
 })
