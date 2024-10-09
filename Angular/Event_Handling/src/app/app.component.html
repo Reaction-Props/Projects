@@ -1,8 +1,11 @@
 
 
-<button [style.color]="color" (click)="color = 'red'">{{title}}</button>
+<button [style.color]="color" (click)="changColor('red')">{{title}}</button>
+<button [style.color]="color" on-click="changColorr('blue')">{{title}}</button>
 
 
-<h1 [style.color]="color">Test</h1>
+<input type="text" (input)="checkCurrentValue($event)" (keydown.shift)="this.color = 'pink'">
+
+
 
 <router-outlet></router-outlet>
