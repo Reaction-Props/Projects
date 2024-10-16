@@ -1,5 +1,7 @@
 import {inject, Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
+import {pipe, tap} from "rxjs";
+import {TokenResponse} from "./auth.interface";
 
 
 @Injectable({
@@ -10,13 +12,27 @@ export class AuthService {
   http = inject(HttpClient)
   baseApiUrl = 'https://icherniakov.ru/yt-course/auth/';
 
+  token: string  | null = null;
+  refreshToken: string  | null = null;
+
+
+  get isAuth() {
+    return !!this.token
+  }
+
   login(payload: { username: string, password: string }) {
     const fd = new FormData()
     fd.append('username', payload.username)
-    fd.append('username', payload.password)
-    return this.http.post(
+    fd.append('password', payload.password)
+
+    return this.http.post<TokenResponse>(
       `${this.baseApiUrl}token`,
-      fd
+      fd,
+    ).pipe(
+      tap(value => {
+          this.token = value.access_token;
+          this.refreshToken = value.refresh_token
+      })
     )
   }
 }
