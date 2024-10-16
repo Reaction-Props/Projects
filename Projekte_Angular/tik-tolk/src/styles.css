@@ -19,6 +19,18 @@
   font-display: swap;
   src: url("/assets/fonts/JetBrainsMono-Thin.woff2") format("woff2");
 }
+.m16 {
+  margin-bottom: 16px;
+}
+
+.m32 {
+  margin-bottom: 32px;
+}
+
+.mb60 {
+  margin-bottom: 60px;
+}
+
 :root {
   --dark-color: #000000;
   --light-color: #ffffff;
@@ -40,6 +52,11 @@ body {
   background: var(--dark-color);
   color: var(--light-color);
   font-family: "JetBrains Mono", sans-serif;
+  background-image: url("/assets/img/loginBg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: inherit;
+  height: 100vh;
 }
 
 .skill-tag {
@@ -67,11 +84,22 @@ body {
   font-weight: 700;
   line-height: 24px;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  margin-top: 15px;
+  cursor: pointer;
+  border: var(--dark-color);
+  position: relative;
 }
 .btn:hover {
   background-color: var(--primary-color-light);
   color: var(--dark-color);
   transform: scale(1.05);
+}
+
+.h1 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 800;
 }
 
 h6 {
@@ -83,6 +111,26 @@ h6 {
 .subtitle {
   font-size: 14px;
   line-height: 20px;
+}
+
+.tt-control-label {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  display: block;
+}
+
+.tt-input {
+  margin-bottom: 5px;
+  display: block;
+  border: 1px solid var(--light-color);
+  background: var(--dark-color);
+  border-radius: 4px;
+  padding: 12px 30px;
+  font-size: 14px;
+  font-family: "JetBrains Mono", sans-serif;
+  color: var(--light-color);
+  width: 440px;
 }
 
 /*# sourceMappingURL=styles.css.map */
