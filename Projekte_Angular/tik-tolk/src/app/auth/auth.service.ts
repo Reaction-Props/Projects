@@ -1,6 +1,6 @@
 import {inject, Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import {pipe, tap} from "rxjs";
+import {tap} from "rxjs";
 import {TokenResponse} from "./auth.interface";
 
 
@@ -31,7 +31,7 @@ export class AuthService {
     ).pipe(
       tap(value => {
           this.token = value.access_token;
-          this.refreshToken = value.refresh_token
+          this.refreshToken = value.refresh_token;
       })
     )
   }
