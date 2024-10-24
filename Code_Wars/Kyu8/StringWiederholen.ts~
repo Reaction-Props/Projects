@@ -8,6 +8,7 @@ export function repeatStr(n: number, s: string): string {
         result += s;
     }
     return result;
+
 }
 
 console.log(repeatStr(3, "Hallo"));  // => "HalloHalloHallo"

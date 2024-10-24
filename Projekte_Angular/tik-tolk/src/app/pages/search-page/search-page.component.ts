@@ -24,5 +24,4 @@ export class SearchPageComponent {
         this.profiles = value
       })
   }
-
 }

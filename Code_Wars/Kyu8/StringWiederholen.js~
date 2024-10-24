@@ -5,11 +5,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.repeatStr = repeatStr;
 function repeatStr(n, s) {
-    var result = "";
-    for (var i = 0; i < n; i++) {
-        result += s;
-    }
-    return result;
+    var str = n.toString();
+    return str + s;
 }
 console.log(repeatStr(3, "Hallo")); // => "HalloHalloHallo"
 console.log(repeatStr(2, "Test")); // => "TestTest"
