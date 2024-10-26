@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'start_angular_demo';
+    protected readonly HTMLInputElement = HTMLInputElement;
 }

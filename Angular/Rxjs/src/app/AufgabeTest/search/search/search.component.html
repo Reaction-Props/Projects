@@ -1,0 +1,4 @@
+<input #searchInput (input)="onSearch(searchInput.value)" placeholder="Suchbegriff eingeben" />
+<ul>
+  <li *ngFor="let result of searchResults">{{ result }}</li>
+</ul>
